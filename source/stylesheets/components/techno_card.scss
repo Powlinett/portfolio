@@ -1,0 +1,16 @@
+.techno-card {
+  background-color: $beige;
+  color: $blue;
+  box-shadow: $small-shadow;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: $sans-serif;
+  transform: skew(0, -5deg);
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: $medium-shadow;
+    margin-left: 0.13rem;
+  }
+}

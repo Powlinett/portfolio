@@ -1,0 +1,59 @@
+// MAIN COLORS
+// $beige: #c44536;
+$beige: #edddd4;
+// $blue: #edddd4;
+$blue: #335c67;
+$dark-blue: #223D44;
+// $orange: #335c67;
+$orange: #c44536;
+$dark-orange: #A0372C;
+
+// EFFECTS
+$three-d-shadow: 0 0 0 $orange,
+               -0.01rem 0.01rem 0 $orange,
+               -0.02rem 0.02rem 0 $orange,
+               -0.03rem 0.03rem 0 $orange,
+               -0.04rem 0.04rem 0 $orange,
+               -0.05rem 0.05rem 0 $orange,
+               -0.06rem 0.06rem 0 $orange,
+               -0.07rem 0.07rem 0 $orange,
+               -0.08rem 0.08rem 0 $orange,
+               -0.09rem 0.09rem 0 $orange,
+               -0.1rem 0.1rem 0 $orange,
+               -0.11rem 0.11rem 0 $orange,
+               -0.12rem 0.12rem 0 $orange,
+               -0.13rem 0.13rem 0 $orange,
+               -0.14rem 0.14rem 0 $orange,
+               -0.15rem 0.15rem 0 $orange,
+               -0.16rem 0.16rem 0 $orange,
+               -0.17rem 0.17rem 0 $orange;
+
+$reverse-three-d-shadow: 0 0 0 $orange,
+                 0.01rem -0.01rem 0 $orange,
+                 0.02rem -0.02rem 0 $orange,
+                 0.03rem -0.03rem 0 $orange,
+                 0.04rem -0.04rem 0 $orange,
+                 0.05rem -0.05rem 0 $orange,
+                 0.06rem -0.06rem 0 $orange,
+                 0.07rem -0.07rem 0 $orange,
+                 0.08rem -0.08rem 0 $orange,
+                 0.09rem -0.09rem 0 $orange,
+                 0.1rem -0.1rem 0 $orange,
+                 0.11rem -0.11rem 0 $orange,
+                 0.12rem -0.12rem 0 $orange,
+                 0.13rem -0.13rem 0 $orange,
+                 0.14rem -0.14rem 0 $orange,
+                 0.15rem -0.15rem 0 $orange,
+                 0.16rem -0.16rem 0 $orange,
+                 0.17rem -0.17rem 0 $orange;
+
+$small-shadow: -0.17rem 0.17rem 0 $orange;
+$medium-shadow: -0.3rem 0.3rem 0 $orange;
+$reverse-shadow: 0.17rem -0.17rem 0 $orange;
+
+// FONTS
+$monospace: 'Inconsolata', monospace;
+$sans-serif: 'Montserrat', sans-serif;
+
+// OTHER VARS
+$dashed: 0.5rem dashed $orange;

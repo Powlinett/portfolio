@@ -1,0 +1,27 @@
+.parcours-card {
+  background-color: $beige;
+  color: $blue;
+  padding: 2rem;
+  box-shadow: $small-shadow;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: $medium-shadow;
+    margin-left: 0.13rem;
+  }
+}
+
+.parcours-title {
+  font-family: $sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.parcours-description {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}

@@ -1,23 +1,90 @@
----
-title: Welcome to Middleman
----
+<div class="section head-section">
+  <div class="headings">
+    <h2>
+      Pauline
+      <br>
+      Eustachy
+    </h2>
+    <h1>
+      <%= data.me.job.name %>
+      <br>
+      <%= data.me.job.speciality %>
+      <br>
+      <%= data.me.job.level %>
+    </h1>
+  </div>
+  <div class="photo">
+  </div>
+</div>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" class="middleman-logo" aria-labelledby="middleman-logo__title" role="img">
-  <title id="middleman-logo__title">Middleman</title>
-  <path class="middleman-logo__top-left-bar" fill-opacity=".45" d="M0 40L200 0v30L0 60z"/>
-  <path class="middleman-logo__top-right-bar" fill="#fff" d="M200 0l200 40v20L200 30z"/>
-  <path class="middleman-logo__left-m" fill-opacity=".45" d="M0 78v184l45 5V152l45 83 47-83v129l53 7V52l-57 8-43 83-43-70z"/>
-  <path class="middleman-logo__right-m" fill="#fff" d="M400 78v184l-45 5V152l-45 83-47-83v129l-53 7V52l57 8 43 83 43-70z"/>
-  <path class="middleman-logo__bottom-left-bar" fill-opacity=".45" d="M0 300l200 40v-30L0 280z"/>
-  <path class="middleman-logo__bottom-right-bar" fill="#fff" d="M200 340l200-40v-20l-200 30z"/>
-</svg>
+<% data.me.categories.each do |category| %>
+  <% if category.name == 'projets' %>
+    <div class="shape shape-left">
+      <div class="inner-shape">
+        <div class="text">
+          Découvrez
+          <br>
+          mon travail
+          <br>
+          en détails.
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/pauline-eustachy/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Powlinett">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <div class="section category-section" id="<%= category.name %>">
+    <div>
+      <h3 class="category-heading">
+        <%= category.name %>
+      </h3>
+    </div>
+    <div class="category-layout <%= category.name %>-layout">
+      <% case category.name %>
+        <% when 'technos' %>
+          <%= partial 'partials/techno_cards', locals: { category: category } %>
+        <% when 'projets' %>
+          <%= partial 'partials/project_cards', locals: { category: category } %>
+        <% when 'parcours' %>
+          <%= partial 'partials/parcours_cards', locals: { category: category } %>
+      <% end %>
+    </div>
+  </div>
+  <% if category.name == 'projets' %>
+    <div class="shape shape-right">
+      <div class="inner-shape">
+        <div class="text">
+          <div>
+            Une question ?
+          </div>
+          <div>
+            Un conseil ?
+          </div>
+          <div>
+            Dites-moi tout !
+          </div>
+        </div>
+        <div class="links">
+          <a href="#">
+            <i class="fab fa-slack"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-at"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>
 
-<h1>
-  Middleman is Running
-</h1>
-
-<%= link_to(
-  "Read Documentation",
-  "https://middlemanapp.com/basics/templating_language/",
-  target: "_blank"
-) %>
+<div class="section">
+  <h3 class="category-heading">
+    à bientôt
+  </h3>
+</div>

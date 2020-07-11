@@ -1,0 +1,44 @@
+<% category.content.each do |c| %>
+  <div class="project-tiles">
+    <div class="tile header-tile">
+      <h4>
+        <%= c.name if c.name %>
+      </h4>
+    </div>
+
+    <% if c.site %>
+      <div class="tile red-tile" style='background-image: url("images/<%= c.site[1] %>");'>
+        <a href="<%= c.site[0] %>">
+          <%= image_tag 'www.png' %>
+        </a>
+      </div>
+    <% end %>
+
+    <% if c.video %>
+      <div class="tile red-tile" style='background-image: url("images/<%= c.video[1] %>");'>
+        <a href="<%= c.video[0] %>">
+          <%= image_tag 'yt.png' %>
+        </a>
+      </div>
+    <% end %>
+
+    <% if c.code %>
+      <div class="tile red-tile" style='background-image: url("images/<%= c.code[1] %>");'>
+        <a href="<%= c.code[0] %>">
+          <%= image_tag 'gh-logo.png' %>
+        </a>
+      </div>
+    <% end %>
+
+    <% if c.description && c.technos %>
+      <div class="tile description-tile">
+        <p>
+          <%= c.description %>
+        </p>
+        <p>
+          <%= c.technos %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+<% end %>

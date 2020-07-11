@@ -1,0 +1,53 @@
+.tile {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tile img {
+  max-width: 100%;
+}
+
+.tile.header-tile {
+  background-color: $beige;
+  color: $blue;
+}
+
+.tile h4 {
+  width: 100%;
+  margin: 0;
+  align-self: flex-end;
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: $sans-serif;
+}
+
+.tile.description-tile {
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+
+  p {
+    margin-top: 0;
+    text-align: justify;
+  }
+}
+
+.red-tile {
+  background-position: center;
+  background-size: cover;
+
+  img {
+    transition: opacity 0.2s ease;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  }
+
+  &:hover {
+    img {
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      background: linear-gradient(transparent, transparent);
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+.headings {
+  position: absolute;
+  z-index: 1;
+  align-self: center;
+}
+
+.photo {
+  width: 50vw;
+  height: 120vh;
+  border-radius: 120% 0 120% 50%;
+  border: 0.5rem dashed $orange;
+  position: relative;
+  top: -105%;
+  right: -35%;
+  background-image: url('../images/photo.png');
+  background-size: 46%;
+  background-position-y: bottom;
+  background-repeat-y: no-repeat;
+  background-position-x: 30%;
+  transition: border-radius 3s ease;
+
+  &:hover {
+    border-radius: 200% 0 190% 260%;
+    transition: border-radius 3s ease;
+  }
+
+  img {
+    height: 21vw;
+    border-radius: 50%;
+    opacity: 65%;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.9));
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "job":
+    {
+      "name": "développeuse",
+      "speciality": "full-stack",
+      "level": "junior"
+    },
+
+  "categories":
+    [
+      {
+        "name": "technos",
+        "content":
+          [
+            "Ruby (on Rails)",
+            "Node.js",
+            "HTML / CSS",
+            "Javascript (ES6)",
+            "Git / Github",
+            "Docker"
+          ]
+      },
+      {
+        "name": "projets",
+        "content":
+          [
+            {
+              "name": "Single Tab",
+              "code": ["https://github.com/Powlinett/singletab", "singletab-gh.png"],
+              "video": ["https://www.youtube.com/watch?v=rHgGdLNrB1I","yt-vignette.png"],
+              "description": "SingleTab est une application et extension Chrome pour gérer ses onglets. <br> Projet créé pendant le Wagon Lyon, toujours en cours.",
+              "technos": "Réalisé en Ruby On Rails et Javascript."
+            },
+            {
+              "name": "Tamaris",
+              "site": ["https://www.tamaris-saintpaullesdax.com", "tamaris.png"],
+              "code": ["https://github.com/Powlinett/tamaris-dax", "tamaris-gh.png"],
+              "description": "Site type e-commerce pour réservation de paires de chaussures en boutique. <br> Un back-office basique est inclus.",
+              "technos": "Réalisé en Ruby On Rails."
+            }
+          ]
+      },
+      {
+        "name": "parcours",
+        "content":
+          [
+            {
+              "title": "10 ans dans le retail",
+              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+            },
+            {
+              "title": "Manager adjointe",
+              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+            },
+            {
+              "title": "Reconversion au Wagon Lyon",
+              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+            },
+            {
+              "title": "T.A. et intervenante",
+              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+            }
+          ]
+      }
+    ]
+}
