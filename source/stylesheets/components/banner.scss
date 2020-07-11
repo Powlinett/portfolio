@@ -6,28 +6,42 @@
 
 .photo {
   width: 50vw;
-  height: 120vh;
-  border-radius: 120% 0 120% 50%;
-  border: 0.5rem dashed $orange;
+  height: 90vh;
+  border: $dashed;
   position: relative;
-  top: -105%;
+  top: -50%;
   right: -35%;
+  background-color: $blue;
   background-image: url('../images/photo.png');
-  background-size: 46%;
+  background-size: 50%;
   background-position-y: bottom;
   background-repeat-y: no-repeat;
-  background-position-x: 30%;
-  transition: border-radius 3s ease;
+  background-position-x: 45%;
+  animation: $wavy-animation;
+  border-radius: 38% 62% 55% 45% / 32% 53% 47% 68% ;
+}
 
-  &:hover {
-    border-radius: 200% 0 190% 260%;
-    transition: border-radius 3s ease;
+.shape.banner-shape {
+  border: none;
+
+  &::after {
+    padding: 10rem;
+    top: 18rem;
+    left: 16rem;
   }
+}
 
-  img {
-    height: 21vw;
-    border-radius: 50%;
-    opacity: 65%;
-    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.9));
+@keyframes wavy-photo {
+  20% {
+    border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+  }
+  40% {
+    border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+  }
+  60% {
+    border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+  }
+  80% {
+    border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
   }
 }
