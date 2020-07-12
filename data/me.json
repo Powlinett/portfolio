@@ -9,6 +9,10 @@
   "categories":
     [
       {
+        "name": "infos",
+        "content": "J'ai <span id='age'><span> ans, je vis à Lyon et je me suis récemment reconverti en tant que développeuse web.$ Pourquoi le code ? Parce qu’il faut constamment se renouveler, faire travailler ses méninges, être curieux et créatif.$ Avec une préférence pour le back-end, il me tient à coeur de faire du code clair et facilement maintenable.$ J'adore le travail en équipe et l'élaboration de solutions innovantes. Je cherche à travailler avec une équipe pédagogue et bienveillante."
+      },
+      {
         "name": "technos",
         "content":
           [
@@ -35,7 +39,7 @@
               "name": "Tamaris",
               "site": ["https://www.tamaris-saintpaullesdax.com", "tamaris.png"],
               "code": ["https://github.com/Powlinett/tamaris-dax", "tamaris-gh.png"],
-              "description": "Site type e-commerce pour réservation de paires de chaussures en boutique. <br> Un back-office basique est inclus.",
+              "description": "Site type e-commerce pour réservation de paires de chaussures en boutique. <br> Une partie admin est incluse.",
               "technos": "Réalisé en Ruby On Rails."
             }
           ]
@@ -46,19 +50,19 @@
           [
             {
               "title": "10 ans dans le retail",
-              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+              "description": "La vente nécessite beaucoup d'énergie et une bonne gestion des priorités. <br><br> Au-delà de l'aspect commercial et relationnel, j'y ai surtout acquis une grande capacité d'écoute."
             },
             {
               "title": "Manager adjointe",
-              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+              "description": "Pendant deux ans, j'ai encadré une équipe d'une dizaine puis d'une vingtaine de personnes. <br><br> Gestion de l’humain, création d’outils de suivi et de développement de chiffres d’affaires."
             },
             {
               "title": "Reconversion au Wagon Lyon",
-              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+              "description": "Souhaitant un métier plus orienté produit, je me suis tournée vers Le Wagon fin 2019. <br><br> L'objectif était alors d'allier créativité et analyse pour construire des solutions plus librement."
             },
             {
               "title": "T.A. et intervenante",
-              "description": "This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block."
+              "description": "Teacher Assistant au Wagon Lyon: analyse d'erreurs, débug et partage de bonnes pratiques. <br><br> Je suis également intervenue à l'ESDES (UCLY) pour les sessions de HTML/CSS."
             }
           ]
       }

@@ -25,11 +25,10 @@
 .tile.description-tile {
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 1.3rem;
+  font-size: $text-size;
 
   p {
     margin-top: 0;
-    text-align: justify;
   }
 }
 

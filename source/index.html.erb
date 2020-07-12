@@ -19,25 +19,7 @@
 
 <% data.me.categories.each do |category| %>
   <% if category.name == 'projets' %>
-    <div class="shape shape-left">
-      <div class="inner-shape">
-        <div class="text">
-          Découvrez
-          <br>
-          mon travail
-          <br>
-          en détails.
-        </div>
-        <div class="links">
-          <a href="https://github.com/Powlinett">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/pauline-eustachy/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <%= partial 'partials/shape_left' %>
   <% end %>
   <div class="section category-section" id="<%= category.name %>">
     <div>
@@ -47,6 +29,8 @@
     </div>
     <div class="category-layout <%= category.name %>-layout">
       <% case category.name %>
+        <% when 'infos' %>
+          <%= partial 'partials/infos', locals: { category: category } %>
         <% when 'technos' %>
           <%= partial 'partials/techno_cards', locals: { category: category } %>
         <% when 'projets' %>
@@ -57,32 +41,7 @@
     </div>
   </div>
   <% if category.name == 'projets' %>
-    <div class="shape shape-right">
-      <div class="inner-shape">
-        <div class="text">
-          <div>
-            Une question ?
-          </div>
-          <div>
-            Ou un conseil ?
-          </div>
-          <div>
-            Dites-moi tout !
-          </div>
-        </div>
-        <div class="links">
-          <a href="tel: +33678615188">
-            <i class="fas fa-mobile-alt"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-slack"></i>
-          </a>
-          <a href="mailto: pauline.eustachy@gmail.com">
-            <i class="fas fa-at"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <%= partial 'partials/shape_right' %>
   <% end %>
 <% end %>
 

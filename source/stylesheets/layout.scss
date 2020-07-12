@@ -10,7 +10,7 @@
   max-width: 77vw;
   display: flex;
   align-items: end;
-  height: 60vh;
+  height: 61vh;
   margin-top: 0;
 }
 
@@ -23,6 +23,10 @@
 .category-layout.technos-layout {
   gap: 1vw;
   margin-top: 2rem;
+}
+
+.category-layout.infos-layout {
+  grid-template-columns: 1fr;
 }
 
 .project-tiles {

@@ -1,0 +1,23 @@
+p.infos {
+  margin: 0;
+  font-size: $text-size;
+
+  &::before {
+    background-image: url('../images/quote-up.svg');
+    margin-bottom: 2rem;
+  }
+
+  &::after {
+    background-image: url('../images/quote-down.svg');
+    float: right;
+    margin-top: 3rem;
+  }
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    background-size: contain;
+  }
+}

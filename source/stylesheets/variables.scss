@@ -44,13 +44,14 @@ $reverse-three-d-shadow: 0 0 0 $orange,
                  0.16rem -0.16rem 0 $orange,
                  0.17rem -0.17rem 0 $orange;
 
-$small-shadow: -0.17rem 0.17rem 0 $orange;
-$medium-shadow: -0.3rem 0.3rem 0 $orange;
+$small-shadow: -0.3rem 0.3rem 0 $orange;
+$medium-shadow: -0.6rem 0.6rem 0 $orange;
 $reverse-shadow: 0.17rem -0.17rem 0 $orange;
 
 // FONTS
 $monospace: 'Inconsolata', monospace;
 $sans-serif: 'Montserrat', sans-serif;
+$text-size: 1.3rem;
 
 // OTHER VARS
 $dashed: 0.5rem dashed $orange;
