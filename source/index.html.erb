@@ -18,10 +18,13 @@
 </div>
 
 <% data.me.categories.each do |category| %>
-  <% if category.name == 'projets' %>
-    <%= partial 'partials/shape_left' %>
-  <% end %>
   <div class="section category-section" id="<%= category.name %>">
+    <% if category.name == 'projets' %>
+      <%= partial 'partials/shape_left' %>
+    <% end %>
+    <% if category.name == 'parcours' %>
+      <%= partial 'partials/shape_right' %>
+    <% end %>
     <div>
       <h3 class="category-heading">
         <%= category.name %>
@@ -40,9 +43,6 @@
       <% end %>
     </div>
   </div>
-  <% if category.name == 'projets' %>
-    <%= partial 'partials/shape_right' %>
-  <% end %>
 <% end %>
 
 <div class="section">

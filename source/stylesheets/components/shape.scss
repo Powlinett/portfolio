@@ -3,21 +3,19 @@
   border: $dashed;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 1.5rem;
-  font-weight: 600;
   font-family: $sans-serif;
   border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
   animation: $wavy-animation;
+}
 
-  &::after {
-    content: '';
-    padding: 8rem;
-    position: relative;
-    background-color: $orange;
-    border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
-    animation: $wavy-animation;
-  }
+.inner-shape {
+  align-self: center;
+  width: fit-content;
+  padding: 1rem;
+  background-color: $orange;
+  border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
+  animation: $wavy-animation;
 }
 
 .shape .links {
@@ -27,52 +25,33 @@
 
   a {
     color: $beige;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: none;
   }
 }
 
-.inner-shape {
-  max-width: 50%;
-  z-index: 2;
-}
-
 .shape-left {
-  justify-content: flex-end;
-  width: 60rem;
-  height: 50rem;
-  left: -24%;
-  margin-top: 25rem;
-
-  &::after {
-    bottom: 35%;
-    left: 17%;
-  }
+  width: 30vw;
+  height: 40vw;
+  left: -10%;
+  margin-top: 16%;
 }
 
 .shape-left .inner-shape {
-  margin-left: 22rem;
-  margin-bottom: 4rem;
+  margin-left: 6rem;
+  margin-top: 50%;
 }
 
 .shape-right {
-  width: 60rem;
-  height: 35rem;
-  justify-content: center;
-  right: -20%;
-  margin-top: 40rem;
-
-  &::after {
-    bottom: 20rem;
-    right: 8rem;
-  }
+  width: 45vw;
+  height: 30vw;
+  right: -15%;
+  margin-top: 36%;
 }
 
 .shape-right .inner-shape {
-  padding: 6rem;
-  margin-right: 16rem;
-  margin-top: 15rem;
   text-align: right;
+  margin-top: 20%;
 }
 
 @keyframes wave {

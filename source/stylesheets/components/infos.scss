@@ -1,23 +1,35 @@
-p.infos {
-  margin: 0;
+.infos {
   font-size: $text-size;
+  font-weight: 600;
+  display: flex;
+  border: 0.5rem solid $orange;
+  padding: 2rem 3.5rem;
+
+  div {
+    width: 55%;
+    margin: 0 auto;
+    z-index: 1;
+    text-shadow: $blue-shadow;
+  }
+
+  #age {
+    margin: 0;
+  }
 
   &::before {
     background-image: url('../images/quote-up.svg');
-    margin-bottom: 2rem;
+    align-self: flex-start;
   }
 
   &::after {
     background-image: url('../images/quote-down.svg');
-    float: right;
-    margin-top: 3rem;
+    align-self: flex-end;
   }
 
   &::before, &::after {
     content: '';
-    display: block;
-    width: 8rem;
-    height: 8rem;
+    padding: 4rem;
     background-size: contain;
+    background-repeat: no-repeat;
   }
 }
