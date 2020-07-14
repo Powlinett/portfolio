@@ -4,8 +4,11 @@
   overflow: hidden;
 }
 
-.tile img {
-  max-width: 100%;
+.tile .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .tile.header-tile {
@@ -25,7 +28,6 @@
 .tile.description-tile {
   flex-direction: column;
   justify-content: flex-start;
-  font-size: $text-size;
 
   p {
     margin-top: 0;
@@ -36,16 +38,14 @@
   background-position: center;
   background-size: cover;
 
-  img {
+  .image {
     transition: opacity 0.2s ease;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
   }
 
   &:hover {
-    img {
+    .image {
       opacity: 0;
       transition: opacity 0.2s ease;
-      background: linear-gradient(transparent, transparent);
     }
   }
 
