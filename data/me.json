@@ -32,7 +32,7 @@
               "name": "Single Tab",
               "code": ["https://github.com/Powlinett/singletab", "singletab-gh.png"],
               "video": ["https://www.youtube.com/watch?v=rHgGdLNrB1I","yt-vignette.png"],
-              "description": "SingleTab est une application et extension Chrome pour gérer ses onglets. <br> Projet créé pendant le Wagon Lyon, toujours en cours.",
+              "description": "SingleTab est une appli et extension Chrome pour gérer ses onglets. <br> Toujours en cours.",
               "technos": "Réalisé en Ruby On Rails et Javascript."
             },
             {

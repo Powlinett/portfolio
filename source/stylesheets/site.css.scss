@@ -24,30 +24,33 @@ html, body {
 h1, h2, h3 {
   color: $beige;
   font-family: $monospace;
-  font-size: 5rem;
+  font-size: 5.5rem;
 }
 
 h1 {
   font-weight: 400;
   margin: 0;
+  margin-top: 3rem;
+  line-height: 4.5rem;
+  font-size: 5rem;
 }
 
 h1, h2 {
   text-shadow: $three-d-shadow;
-  margin-top: 0;
 }
 
 h2 {
-  margin-bottom: 4rem;
-  font-size: 6rem;
+  margin: 0;
+  line-height: 5rem;
 }
 
 h3 {
   text-shadow: $reverse-three-d-shadow;
+  margin-top: 0;
   margin-bottom: 1rem;
   text-align: right;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 
   &::before {
     content: '_';

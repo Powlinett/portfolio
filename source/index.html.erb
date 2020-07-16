@@ -1,52 +1,51 @@
-<div class="section head-section">
-  <div class="headings">
-    <h2>
-      Pauline
-      <br>
-      Eustachy
-    </h2>
-    <h1>
-      <%= data.me.job.name %>
-      <br>
-      <%= data.me.job.speciality %>
-      <br>
-      <%= data.me.job.level %>
-    </h1>
-  </div>
-  <div class="shape banner-shape"></div>
-  <div class="photo"></div>
+<div class="background-shapes">
+  <%= partial 'partials/shape_left' %>
+  <%= partial 'partials/shape_right' %>
 </div>
 
-<% data.me.categories.each do |category| %>
-  <div class="section category-section" id="<%= category.name %>">
-    <% if category.name == 'projets' %>
-      <%= partial 'partials/shape_left' %>
-    <% end %>
-    <% if category.name == 'parcours' %>
-      <%= partial 'partials/shape_right' %>
-    <% end %>
-    <div>
-      <h3 class="category-heading">
-        <%= category.name %>
-      </h3>
-    </div>
-    <div class="category-layout <%= category.name %>-layout">
-      <% case category.name %>
-        <% when 'infos' %>
-          <%= partial 'partials/infos', locals: { category: category } %>
-        <% when 'technos' %>
-          <%= partial 'partials/techno_cards', locals: { category: category } %>
-        <% when 'projets' %>
-          <%= partial 'partials/project_cards', locals: { category: category } %>
-        <% when 'parcours' %>
-          <%= partial 'partials/parcours_cards', locals: { category: category } %>
-      <% end %>
-    </div>
+<div class="foreground">
+  <div class="section head-section">
+    <div class="headings">
+      <h2>
+        Pauline Eustachy
+      </h2>
+      <h1>
+        <%= data.me.job.name %>
+        <br>
+        <%= data.me.job.speciality %>
+        <br>
+        <%= data.me.job.level %>
+      </h1>
+<!--     <div class="shape banner-shape"></div>
+ -->    </div>
+    <img src="images/photo.png" class="photo" alt="Pauline Eustachy">
   </div>
-<% end %>
 
-<div class="section">
-  <h3 class="category-heading">
-    à bientôt
-  </h3>
+  <% data.me.categories.each do |category| %>
+    <div class="section category-section" id="<%= category.name %>">
+      <div>
+        <h3 class="category-heading">
+          <%= category.name %>
+        </h3>
+      </div>
+      <div class="category-layout <%= category.name %>-layout">
+        <% case category.name %>
+          <% when 'infos' %>
+            <%= partial 'partials/infos', locals: { category: category } %>
+          <% when 'technos' %>
+            <%= partial 'partials/techno_cards', locals: { category: category } %>
+          <% when 'projets' %>
+            <%= partial 'partials/project_cards', locals: { category: category } %>
+          <% when 'parcours' %>
+            <%= partial 'partials/parcours_cards', locals: { category: category } %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="section">
+    <h3 class="category-heading">
+      à bientôt
+    </h3>
+  </div>
 </div>

@@ -1,5 +1,5 @@
 .shape {
-  position: absolute;
+  position: relative;
   border: $dashed;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
   width: 30vw;
   height: 40vw;
   left: -10%;
-  margin-top: 16%;
+  bottom: 20%;
 }
 
 .shape-left .inner-shape {
@@ -51,8 +51,9 @@
 .shape-right {
   width: 45vw;
   height: 30vw;
-  right: -15%;
-  margin-top: 50%;
+  right: -10%;
+  bottom: 3%;
+  align-self: flex-end;
 }
 
 .shape-right .inner-shape {
@@ -60,17 +61,17 @@
   margin-top: 20%;
 }
 
-@keyframes wave {
-  20% {
-    border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
-  }
-  40% {
-    border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
-  }
-  60% {
-    border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
-  }
-  80% {
-    border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
-  }
-}
+// @keyframes wave {
+//   20% {
+//     border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+//   }
+//   40% {
+//     border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+//   }
+//   60% {
+//     border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+//   }
+//   80% {
+//     border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+//   }
+// }
