@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 0 6rem;
 }
 
 .foreground {
@@ -27,6 +28,14 @@
   align-items: center;
   position: relative;
   margin-top: 0;
+
+  &:hover {
+    .media-links {
+      display: flex;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
 }
 
 .category-layout {

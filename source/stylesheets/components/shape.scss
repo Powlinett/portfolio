@@ -1,21 +1,26 @@
 .shape {
-  position: relative;
-  border: $dashed;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  font-family: $sans-serif;
-  border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
-  animation: $wavy-animation;
-}
-
-.inner-shape {
-  align-self: center;
   width: fit-content;
-  padding: 1rem;
+  padding: 3rem;
+  position: absolute;
   background-color: $orange;
   border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
   animation: $wavy-animation;
+  font-size: 1.5rem;
+  font-family: $sans-serif;
+
+  &::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.22);
+    position: absolute;
+    padding: 8rem;
+    border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
+    animation: $wavy-animation;
+  }
+}
+
+.shape .text, .shape .links {
+  position: relative;
+  z-index: 4
 }
 
 .shape .links {
@@ -30,48 +35,33 @@
     transition: transform 0.3s ease;
 
     &:hover {
-      transform: scale(1.1, 1.1);
+      transform: scale(1.2, 1.2);
       transition: transform 0.3s ease;
     }
   }
 }
 
-.shape-left {
-  width: 30vw;
-  height: 40vw;
-  left: -10%;
-  bottom: 20%;
+.shape.left {
+  bottom: 38%;
+
+  &::before {
+    bottom: 1%;
+    right: 1%;
+  }
 }
 
-.shape-left .inner-shape {
-  margin-left: 6rem;
-  margin-top: 50%;
-}
-
-.shape-right {
-  width: 45vw;
-  height: 30vw;
-  right: -10%;
-  bottom: 3%;
-  align-self: flex-end;
-}
-
-.shape-right .inner-shape {
+.shape.right {
   text-align: right;
-  margin-top: 20%;
-}
+  bottom: 5%;
+  align-self: flex-end;
 
-// @keyframes wave {
-//   20% {
-//     border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
-//   }
-//   40% {
-//     border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
-//   }
-//   60% {
-//     border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
-//   }
-//   80% {
-//     border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
-//   }
-// }
+  &::before {
+    bottom: 1%;
+    right: -4%;
+  }
+
+  .links a img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}

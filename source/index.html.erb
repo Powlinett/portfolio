@@ -16,10 +16,55 @@
         <br>
         <%= data.me.job.level %>
       </h1>
-<!--     <div class="shape banner-shape"></div>
- -->    </div>
+    </div>
     <img src="images/photo.png" class="photo" alt="Pauline Eustachy">
+    <ul class="media-links">
+      <li class="media-link">
+        <a href="https://github.com/Powlinett">
+          <i class="fab fa-github"></i>
+        </a>
+        <p class="content">
+          /Powlinett
+        </p>
+      </li>
+      <li class="media-link">
+        <a href="https://www.linkedin.com/in/pauline-eustachy/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <p class="content">
+          /pauline-eustachy
+        </p>
+      </li>
+      <li class="media-link">
+        <a href="tel: +33678615188">
+          <img src="../images/phone.svg" alt="">
+        </a>
+        <p class="content">
+          06 78 61 51 88
+        </p>
+      </li>
+      <li class="media-link">
+        <a href="mailto: pauline.eustachy@gmail.com">
+          <img src="../images/at.svg" alt="">
+        </a>
+        <p class="content">
+          pauline.eustachy@gmail.com
+        </p>
+      </li>
+    </ul>
   </div>
+
+  <ul class="section all-categories">
+    <% data.me.categories.each do |category| %>
+      <li>
+        <h3 class="category-heading">
+          <a href="#<%= category.name %>">
+            <%= category.name %>
+          </a>
+        </h3>
+      </li>
+    <% end %>
+  </ul>
 
   <% data.me.categories.each do |category| %>
     <div class="section category-section" id="<%= category.name %>">

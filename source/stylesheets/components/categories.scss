@@ -1,0 +1,30 @@
+.section.all-categories {
+  display: flex;
+  padding: 0;
+  margin-top: 4rem;
+  min-height: 6rem;
+  justify-content: space-between;
+
+  li {
+    list-style: none;
+  }
+
+  h3.category-heading {
+    font-size: 3.5rem;
+    transition: font-size 0.2s ease-in-out;
+
+    &::before{
+      margin-right: -1.5rem;
+    }
+
+    a {
+      color: $beige;
+      text-decoration: none;
+    }
+
+    &:hover {
+      font-size: 4rem;
+      transition: font-size 0.2s ease-in-out;
+    }
+  }
+}
