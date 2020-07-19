@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   calculateAge();
-  setBackgroundHeight();
+  copyContact();
 });
 
 const calculateAge = () => {
@@ -12,10 +12,24 @@ const calculateAge = () => {
   span.innerText = age;
 };
 
-const setBackgroundHeight = () => {
-  let body = document.querySelector('body');
-  let background = document.querySelector('.background-shapes');
-  let height = getComputedStyle(body).height;
+const copyContact = () => {
+  const contacts = document.querySelectorAll('.media-link .content');
 
-  background.style.height = height;
+  contacts.forEach((contact) => {
+    contact.addEventListener('click', (e) => {
+      let input = document.createElement("input");
+      input.name = 'clipboard';
+      input.style.opacity = "0";
+      document.body.appendChild(input);
+
+      input.type = "text";
+      input.value = e.target.innerText;
+      input.select();
+      document.execCommand("copy");
+
+      let copiedInput = document.querySelector("input[name='clipboard']");
+      copiedInput.remove();
+      e.target.setAttribute('data-after', 'Copié');
+    });
+  });
 };

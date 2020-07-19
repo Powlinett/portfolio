@@ -8,21 +8,21 @@
 
     <% if c.site %>
       <div class="tile red-tile" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.site[1] %>");'>
-        <a href="<%= c.site[0] %>" class="image" style='background-image: url("images/www.png")'>
+        <a href="<%= c.site[0] %>" class="image" target="_blank" style='background-image: url("images/www.png")'>
         </a>
       </div>
     <% end %>
 
     <% if c.video %>
       <div class="tile red-tile" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.video[1] %>");'>
-        <a href="<%= c.video[0] %>" class="image" style='background-image: url("images/yt.png")'>
+        <a href="<%= c.video[0] %>" class="image" target="_blank" style='background-image: url("images/yt.png")'>
         </a>
       </div>
     <% end %>
 
     <% if c.code %>
       <div class="tile red-tile" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.code[1] %>");'>
-        <a href="<%= c.code[0] %>" class="image" style='background-image: url("images/gh-logo.png")'>
+        <a href="<%= c.code[0] %>" class="image" target="_blank" style='background-image: url("images/gh-logo.png")'>
         </a>
       </div>
     <% end %>

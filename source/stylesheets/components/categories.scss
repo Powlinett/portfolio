@@ -7,11 +7,18 @@
 
   li {
     list-style: none;
+
+    &:hover {
+      h3.category-heading {
+        font-size: 4rem;
+        transition: font-size 0.1s ease-in-out;
+      }
+    }
   }
 
   h3.category-heading {
     font-size: 3.5rem;
-    transition: font-size 0.2s ease-in-out;
+    transition: font-size 0.1s ease-in-out;
 
     &::before{
       margin-right: -1.5rem;
@@ -22,9 +29,5 @@
       text-decoration: none;
     }
 
-    &:hover {
-      font-size: 4rem;
-      transition: font-size 0.2s ease-in-out;
-    }
   }
 }

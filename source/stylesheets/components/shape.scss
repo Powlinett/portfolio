@@ -42,7 +42,8 @@
 }
 
 .shape.left {
-  bottom: 38%;
+  top: 280%;
+  left: 5%;
 
   &::before {
     bottom: 1%;
@@ -52,8 +53,8 @@
 
 .shape.right {
   text-align: right;
-  bottom: 5%;
-  align-self: flex-end;
+  right: 5%;
+  top: 455%;
 
   &::before {
     bottom: 1%;

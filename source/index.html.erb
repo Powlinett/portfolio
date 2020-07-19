@@ -1,96 +1,59 @@
-<div class="background-shapes">
-  <%= partial 'partials/shape_left' %>
-  <%= partial 'partials/shape_right' %>
+<%= partial 'partials/shape_left' %>
+<%= partial 'partials/shape_right' %>
+
+<div class="section head-section">
+  <div class="headings">
+    <h2>
+      Pauline Eustachy
+    </h2>
+    <h1>
+      <%= data.me.job.name %>
+      <br>
+      <%= data.me.job.speciality %>
+      <br>
+      <%= data.me.job.level %>
+    </h1>
+  </div>
+  <img src="images/photo.png" class="photo" alt="Pauline Eustachy">
+  <%= partial 'partials/media_links' %>
 </div>
 
-<div class="foreground">
-  <div class="section head-section">
-    <div class="headings">
-      <h2>
-        Pauline Eustachy
-      </h2>
-      <h1>
-        <%= data.me.job.name %>
-        <br>
-        <%= data.me.job.speciality %>
-        <br>
-        <%= data.me.job.level %>
-      </h1>
-    </div>
-    <img src="images/photo.png" class="photo" alt="Pauline Eustachy">
-    <ul class="media-links">
-      <li class="media-link">
-        <a href="https://github.com/Powlinett">
-          <i class="fab fa-github"></i>
-        </a>
-        <p class="content">
-          /Powlinett
-        </p>
-      </li>
-      <li class="media-link">
-        <a href="https://www.linkedin.com/in/pauline-eustachy/">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <p class="content">
-          /pauline-eustachy
-        </p>
-      </li>
-      <li class="media-link">
-        <a href="tel: +33678615188">
-          <img src="../images/phone.svg" alt="">
-        </a>
-        <p class="content">
-          06 78 61 51 88
-        </p>
-      </li>
-      <li class="media-link">
-        <a href="mailto: pauline.eustachy@gmail.com">
-          <img src="../images/at.svg" alt="">
-        </a>
-        <p class="content">
-          pauline.eustachy@gmail.com
-        </p>
-      </li>
-    </ul>
-  </div>
-
-  <ul class="section all-categories">
-    <% data.me.categories.each do |category| %>
-      <li>
-        <h3 class="category-heading">
-          <a href="#<%= category.name %>">
-            <%= category.name %>
-          </a>
-        </h3>
-      </li>
-    <% end %>
-  </ul>
-
+<ul class="section all-categories">
   <% data.me.categories.each do |category| %>
-    <div class="section category-section" id="<%= category.name %>">
-      <div>
-        <h3 class="category-heading">
+    <li>
+      <h3 class="category-heading">
+        <a href="#<%= category.name %>">
           <%= category.name %>
-        </h3>
-      </div>
-      <div class="category-layout <%= category.name %>-layout">
-        <% case category.name %>
-          <% when 'infos' %>
-            <%= partial 'partials/infos', locals: { category: category } %>
-          <% when 'technos' %>
-            <%= partial 'partials/techno_cards', locals: { category: category } %>
-          <% when 'projets' %>
-            <%= partial 'partials/project_cards', locals: { category: category } %>
-          <% when 'parcours' %>
-            <%= partial 'partials/parcours_cards', locals: { category: category } %>
-        <% end %>
-      </div>
-    </div>
+        </a>
+      </h3>
+    </li>
   <% end %>
+</ul>
 
-  <div class="section">
-    <h3 class="category-heading">
-      à bientôt
-    </h3>
+<% data.me.categories.each do |category| %>
+  <div class="section category-section" id="<%= category.name %>">
+    <div>
+      <h3 class="category-heading">
+        <%= category.name %>
+      </h3>
+    </div>
+    <div class="category-layout <%= category.name %>-layout">
+      <% case category.name %>
+        <% when 'infos' %>
+          <%= partial 'partials/infos', locals: { category: category } %>
+        <% when 'technos' %>
+          <%= partial 'partials/techno_cards', locals: { category: category } %>
+        <% when 'projets' %>
+          <%= partial 'partials/project_cards', locals: { category: category } %>
+        <% when 'parcours' %>
+          <%= partial 'partials/parcours_cards', locals: { category: category } %>
+      <% end %>
+    </div>
   </div>
+<% end %>
+
+<div class="section">
+  <h3 class="category-heading">
+    à bientôt
+  </h3>
 </div>
