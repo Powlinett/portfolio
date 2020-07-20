@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   calculateAge();
   copyContact();
+  resetContactContent();
 });
 
 const calculateAge = () => {
@@ -30,6 +31,18 @@ const copyContact = () => {
       let copiedInput = document.querySelector("input[name='clipboard']");
       copiedInput.remove();
       e.target.setAttribute('data-after', 'Copié');
+    });
+  });
+};
+
+const resetContactContent = () => {
+  const contacts = document.querySelectorAll('.media-link .content');
+
+  contacts.forEach((contact) => {
+    contact.addEventListener('mouseout', (e) => {
+      if (e.target.getAttribute('data-after') == 'Copié') {
+        e.target.setAttribute('data-after', 'Cliquer pour copier');
+      }
     });
   });
 };
