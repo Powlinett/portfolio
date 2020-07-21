@@ -16,10 +16,10 @@
         "name": "technos",
         "content":
           [
-            "Ruby (on Rails)",
+            "Ruby on Rails",
             "Node.js",
             "HTML / CSS",
-            "Javascript (ES6)",
+            "Javascript",
             "Git / Github",
             "Docker"
           ]
@@ -33,14 +33,14 @@
               "code": ["https://github.com/Powlinett/singletab", "singletab-gh.png"],
               "video": ["https://www.youtube.com/watch?v=rHgGdLNrB1I","yt-vignette.png"],
               "description": "SingleTab est une appli et extension Chrome pour gérer ses onglets. <br> Toujours en cours.",
-              "technos": "Réalisé en Ruby On Rails et Javascript."
+              "technos" : "Réalisé en Ruby On Rails et Javascript."
             },
             {
               "name": "Tamaris",
               "site": ["https://www.tamaris-saintpaullesdax.com", "tamaris.png"],
               "code": ["https://github.com/Powlinett/tamaris-dax", "tamaris-gh.png"],
               "description": "Site type e-commerce pour réservation de paires de chaussures en boutique. <br> Une partie admin est incluse.",
-              "technos": "Réalisé en Ruby On Rails."
+              "technos" : "Réalisé en Ruby On Rails."
             }
           ]
       },
@@ -49,20 +49,24 @@
         "content":
           [
             {
-              "title": "10 ans dans le retail",
-              "description": "La vente nécessite beaucoup d'énergie et une bonne gestion des priorités. <br><br> Au-delà de l'aspect commercial et relationnel, j'y ai surtout acquis une grande capacité d'écoute."
+              "title": "9 ans d'expérience dans le retail",
+              "date": "2010-2019",
+              "description": "Écoute, conseil, persévérance, gestion des priorités."
             },
             {
-              "title": "Manager adjointe",
-              "description": "Pendant deux ans, j'ai encadré une équipe d'une dizaine puis d'une vingtaine de personnes. <br><br> Gestion de l’humain, création d’outils de suivi et de développement de chiffres d’affaires."
+              "title": "Manager adjointe chez LUSH",
+              "date": "2017-2019",
+              "description": "Gestion de l’humain, suivi, développement de CA."
             },
             {
-              "title": "Reconversion au Wagon Lyon",
-              "description": "Souhaitant un métier plus orienté produit, je me suis tournée vers Le Wagon fin 2019. <br><br> L'objectif était alors d'allier créativité et analyse pour construire des solutions plus librement."
+              "title": "Reconversion professionnelle au Wagon Lyon",
+              "date": "fin 2019",
+              "description": "Créativité, esprit d'analyse et travail d'équipe."
             },
             {
-              "title": "T.A. et intervenante",
-              "description": "Teacher Assistant au Wagon Lyon: analyse d'erreurs, débug et partage de bonnes pratiques. <br><br> Je suis également intervenue à l'ESDES (UCLY) pour les sessions de HTML/CSS."
+              "title": "Teacher Assistant et intervenante",
+              "date": "depuis 2020",
+              "description": "Pédagogie, débug et partage de bonnes pratiques."
             }
           ]
       }

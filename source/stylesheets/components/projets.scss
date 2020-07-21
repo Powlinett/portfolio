@@ -1,15 +1,21 @@
 .tile {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
+  // display: flex;
+  // justify-content: center;
+  // overflow: hidden;
+  background-color: $beige;
+  color: $blue;
 }
 
-.tile .image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+.tile.red {
+  background-color: $orange;
 }
+
+// .tile .image {
+//   width: 100%;
+//   height: 100%;
+//   background-size: cover;
+//   background-position: center;
+// }
 
 .tile.header-tile {
   background-color: $beige;
@@ -26,7 +32,7 @@
 }
 
 .tile.description-tile {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   flex-direction: column;
   justify-content: flex-start;
 

@@ -1,6 +1,5 @@
 .section.head-section:hover {
   .media-links {
-    display: flex;
     visibility: visible;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
@@ -8,6 +7,7 @@
 }
 
 .media-links {
+  display: flex;
   position: relative;
   z-index: 6;
   height: 60%;

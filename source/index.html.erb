@@ -18,18 +18,6 @@
   <%= partial 'partials/media_links' %>
 </div>
 
-<ul class="section all-categories">
-  <% data.me.categories.each do |category| %>
-    <li>
-      <h3 class="category-heading">
-        <a href="#<%= category.name %>">
-          <%= category.name %>
-        </a>
-      </h3>
-    </li>
-  <% end %>
-</ul>
-
 <% data.me.categories.each do |category| %>
   <div class="section category-section" id="<%= category.name %>">
     <div>

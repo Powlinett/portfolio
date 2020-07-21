@@ -1,10 +1,24 @@
-<% category.content.each do |c| %>
-  <div class="parcours-card">
-    <h5 class="parcours-title">
-      <%= c.title %>
-    </h5>
-    <p class="parcours-description">
-      <%= c.description %>
-    </p>
-  </div>
-<% end %>
+<div class="line">
+  <% 4.times do %>
+    <div class="circle"></div>
+  <% end %>
+</div>
+<div class="parcours-container">
+  <% category.content.reverse.each do |c| %>
+    <div class="parcours">
+      <p class="date">
+        <%= c.date %>
+      </p>
+      <div>
+        <div class="parcours-title">
+          <h5>
+            <%= c.title %>
+          </h5>
+        </div>
+        <p class="parcours-description">
+          <%= c.description %>
+        </p>
+      </div>
+      </div>
+  <% end %>
+</div>

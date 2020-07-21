@@ -1,6 +1,6 @@
 <% category.content.each do |c| %>
-  <div class="project-tiles">
-    <div class="tile header-tile">
+  <div class="project">
+    <div class="project-title">
       <h4>
         <%= c.name if c.name %>
       </h4>
@@ -27,8 +27,8 @@
       </div>
     <% end %>
 
-    <% if c.description && c.technos %>
-      <div class="tile description-tile">
+    <% if c.description %>
+      <div class="project-description">
         <p>
           <%= c.description %>
         </p>

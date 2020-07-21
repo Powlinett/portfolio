@@ -1,28 +1,56 @@
-.parcours-card {
-  background-color: $beige;
-  color: $blue;
-  padding: 2rem;
-  box-shadow: $small-shadow;
-  transition: all 0.2s ease;
+.parcours-layout .line {
+  background-color: $orange;
+  width: 0.5rem;
+  padding-top: 3rem;
+  padding-bottom: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  &:hover {
-    box-shadow: $medium-shadow;
-    margin-left: 0.13rem;
-    padding-right: calc(2rem - 0.13rem);
+.parcours-layout .circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.25rem solid $blue;
+  background-color: $orange;
+  margin-left: -1rem;
+}
+
+.parcours-container {
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.parcours-container .parcours {
+  margin-top: 1.5rem;
+  color: $beige;
+  display: flex;
+  align-items: baseline;
+
+  .date {
+    color: $orange;
+    margin: 0;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 10rem;
   }
 }
 
 .parcours-title {
-  font-family: $sans-serif;
-  font-size: $text-size;
-  font-weight: 600;
-  text-shadow: $blue-shadow;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  display: inline-block;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  h5 {
+    margin: 0;
+  }
 }
 
 .parcours-description {
-  margin: 0;
-  font-size: $text-size;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
 }
