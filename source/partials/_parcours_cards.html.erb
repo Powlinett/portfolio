@@ -1,24 +1,18 @@
-<div class="line">
-  <% 4.times do %>
+<% category.content.reverse.each do |c| %>
+  <div class="parcours">
     <div class="circle"></div>
-  <% end %>
-</div>
-<div class="parcours-container">
-  <% category.content.reverse.each do |c| %>
-    <div class="parcours">
-      <p class="date">
-        <%= c.date %>
+    <p class="date">
+      <%= c.date %>
+    </p>
+    <div>
+      <div class="parcours-title">
+        <h5>
+          <%= c.title %>
+        </h5>
+      </div>
+      <p class="parcours-description">
+        <%= c.description %>
       </p>
-      <div>
-        <div class="parcours-title">
-          <h5>
-            <%= c.title %>
-          </h5>
-        </div>
-        <p class="parcours-description">
-          <%= c.description %>
-        </p>
-      </div>
-      </div>
-  <% end %>
-</div>
+    </div>
+    </div>
+<% end %>

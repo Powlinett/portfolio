@@ -42,13 +42,13 @@
   height: fit-content;
 
   i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $beige;
   }
 
   img {
-    width: 1.9rem;
-    height: 1.9rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 }
 
@@ -79,7 +79,7 @@
 
     &::after {
       content: attr(data-after);
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: normal;
       opacity: 0;
     }

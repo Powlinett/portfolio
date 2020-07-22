@@ -22,7 +22,7 @@
 }
 
 .category-layout.technos-layout {
-  gap: 1rem;
+  row-gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -45,7 +45,9 @@
 .category-layout.parcours-layout {
   display: flex;
   align-items: stretch;
-  border-left: none !important;
   border: 0.5rem solid $orange;
   background-color: $blue;
+  padding: 2rem 2rem 2rem 0;
+  flex-direction: column;
+  justify-content: space-evenly;
 }

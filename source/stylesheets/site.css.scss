@@ -20,22 +20,22 @@ html, body {
   width: 100vw;
   overflow-x: hidden;
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 2rem;
 }
 
 h1, h2, h3 {
   color: $beige;
   font-family: $monospace;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
 }
 
 h1 {
   font-weight: 400;
   margin: 0;
-  margin-top: 3rem;
-  line-height: 4.5rem;
-  font-size: 5rem;
+  // margin-top: 3rem;
+  // line-height: 4.5rem;
+  // font-size: 5rem;
 }
 
 h1, h2 {
@@ -44,7 +44,7 @@ h1, h2 {
 
 h2 {
   margin: 0;
-  line-height: 5rem;
+  // line-height: 5rem;
 }
 
 h3 {
@@ -57,7 +57,7 @@ h3 {
 
   &::before {
     content: '_';
-    margin-right: -2.5rem;
+    margin-right: -2rem;
   }
 }
 

@@ -1,41 +1,43 @@
 <% category.content.each do |c| %>
   <div class="project">
-    <div class="project-title">
-      <h4>
-        <%= c.name if c.name %>
-      </h4>
+    <div class="tiles">
+      <% if c.site %>
+        <div class="tile red" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.site[1] %>");'>
+          <a href="<%= c.site[0] %>" class="image" target="_blank" style='background-image: url("images/www.png")'>
+          </a>
+        </div>
+      <% end %>
+
+      <% if c.video %>
+        <div class="tile red" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.video[1] %>");'>
+          <a href="<%= c.video[0] %>" class="image" target="_blank" style='background-image: url("images/yt.png")'>
+          </a>
+        </div>
+      <% end %>
+
+      <% if c.code %>
+        <div class="tile red code" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.code[1] %>");'>
+          <a href="<%= c.code[0] %>" class="image" target="_blank" style='background-image: url("images/gh-logo.png")'>
+          </a>
+        </div>
+      <% end %>
     </div>
 
-    <% if c.site %>
-      <div class="tile red-tile" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.site[1] %>");'>
-        <a href="<%= c.site[0] %>" class="image" target="_blank" style='background-image: url("images/www.png")'>
-        </a>
-      </div>
-    <% end %>
+    <div class="content">
+      <h4 class="project-title">
+        <%= c.name if c.name %>
+      </h4>
 
-    <% if c.video %>
-      <div class="tile red-tile" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.video[1] %>");'>
-        <a href="<%= c.video[0] %>" class="image" target="_blank" style='background-image: url("images/yt.png")'>
-        </a>
-      </div>
-    <% end %>
-
-    <% if c.code %>
-      <div class="tile red-tile" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.code[1] %>");'>
-        <a href="<%= c.code[0] %>" class="image" target="_blank" style='background-image: url("images/gh-logo.png")'>
-        </a>
-      </div>
-    <% end %>
-
-    <% if c.description %>
-      <div class="project-description">
-        <p>
-          <%= c.description %>
-        </p>
-        <p>
-          <%= c.technos %>
-        </p>
-      </div>
-    <% end %>
+      <% if c.description %>
+        <div class="project-description">
+          <p>
+            <%= c.description %>
+          </p>
+          <p>
+            <%= c.technos %>
+          </p>
+        </div>
+      <% end %>
+    </div>
   </div>
 <% end %>
