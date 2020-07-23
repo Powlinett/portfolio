@@ -10,7 +10,7 @@
     [
       {
         "name": "infos",
-        "content": "<p>Fraîchement arrivée dans le développement web fin 2019, j'ai <span id='age'></span> ans et je vis à Lyon.</p><p> Pourquoi le code ? Parce qu’il faut constamment se renouveler, faire travailler ses méninges, être curieux et créatif.</p><p> Avec une préférence pour le back-end, il me tient à coeur de faire du code clair et facilement maintenable.</p><p> J'aime le travail en équipe et l'élaboration de nouvelles solutions.</p>"
+        "content": "<p>Fraîchement arrivée dans le développement web fin 2019, j'ai <span id='age'></span> ans et je vis à Lyon.</p><p> Pourquoi le code ? Parce qu’il faut constamment se renouveler, faire travailler ses méninges, être curieux et créatif.</p><p> Avec une préférence pour le back-end, il me tient à coeur de faire du code clair et facilement maintenable.<br><br> J'aime le travail en équipe et l'élaboration de nouvelles solutions.</p>"
       },
       {
         "name": "technos",
@@ -32,15 +32,15 @@
               "name": "Single Tab",
               "code": ["https://github.com/Powlinett/singletab", "singletab-gh.png"],
               "video": ["https://www.youtube.com/watch?v=rHgGdLNrB1I","yt-vignette.png"],
-              "description": "SingleTab est une appli et extension Chrome pour gérer ses onglets. <br> Toujours en cours.",
-              "technos" : "Réalisé en Ruby On Rails et Javascript."
+              "description": "Appli et extension Chrome pour enregistrer ses onglets et les retrouver par mots-clés. <br><br> Créé au le Wagon Lyon, toujours en cours.",
+              "technos" : "Réalisé avec Ruby On Rails et Javascript."
             },
             {
               "name": "Tamaris",
               "site": ["https://www.tamaris-saintpaullesdax.com", "tamaris.png"],
               "code": ["https://github.com/Powlinett/tamaris-dax", "tamaris-gh.png"],
-              "description": "Site type e-commerce pour réservation de paires de chaussures en boutique. <br> Une partie admin est incluse.",
-              "technos" : "Réalisé en Ruby On Rails."
+              "description": "Site type e-commerce pour réservation de paires de chaussures en boutique. <br><br> Une interface administrateur est incluse.",
+              "technos" : "Réalisé avec Ruby On Rails."
             }
           ]
       },

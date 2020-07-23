@@ -28,7 +28,7 @@
     <div class="category-layout <%= category.name %>-layout">
       <% case category.name %>
         <% when 'infos' %>
-          <%= partial 'partials/infos', locals: { category: category } %>
+          <%= category.content %>
         <% when 'technos' %>
           <%= partial 'partials/techno_cards', locals: { category: category } %>
         <% when 'projets' %>

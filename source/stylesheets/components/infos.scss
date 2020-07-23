@@ -1,31 +1,26 @@
-.infos {
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  border: 0.5rem solid $orange;
-  padding: 2rem 3.5rem;
+#age {
+  margin: 0;
+}
 
-  div {
-    width: 100%;
-    margin: 0 auto;
-    z-index: 1;
-  }
-
-  #age {
-    margin: 0;
-  }
-
-  &::before {
+.infos-layout {
+  p:first-of-type::before {
     background-image: url('../images/quote-up.svg');
-    align-self: flex-start;
+    margin-right: 2rem;
+    float: left;
   }
 
-  &::after {
-    background-image: url('../images/quote-down.svg');
-    align-self: flex-end;
+  p:nth-child(3) {
+    display: flex;
+    align-items: flex-end;
+
+    &::after {
+      background-image: url('../images/quote-down.svg');
+      margin-left: 2rem;
+    }
   }
 
-  &::before, &::after {
+
+  p:first-of-type::before, p:nth-child(3)::after {
     content: '';
     padding: 3rem;
     background-size: contain;

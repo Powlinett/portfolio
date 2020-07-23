@@ -1,42 +1,36 @@
 <% category.content.each do |c| %>
   <div class="project">
-    <div class="tiles">
-      <% if c.site %>
-        <div class="tile red" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.site[1] %>");'>
-          <a href="<%= c.site[0] %>" class="image" target="_blank" style='background-image: url("images/www.png")'>
-          </a>
-        </div>
-      <% end %>
-
-      <% if c.video %>
-        <div class="tile red" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.video[1] %>");'>
-          <a href="<%= c.video[0] %>" class="image" target="_blank" style='background-image: url("images/yt.png")'>
-          </a>
-        </div>
-      <% end %>
-
-      <% if c.code %>
-        <div class="tile red code" style='background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/<%= c.code[1] %>");'>
-          <a href="<%= c.code[0] %>" class="image" target="_blank" style='background-image: url("images/gh-logo.png")'>
-          </a>
-        </div>
-      <% end %>
-    </div>
-
-    <div class="content">
+    <div class="project-description">
       <h4 class="project-title">
         <%= c.name if c.name %>
       </h4>
 
-      <% if c.description %>
-        <div class="project-description">
-          <p>
-            <%= c.description %>
-          </p>
-          <p>
-            <%= c.technos %>
-          </p>
-        </div>
+      <% if c.description && c.technos %>
+        <p>
+          <%= c.description %>
+        </p>
+        <p>
+          <%= c.technos %>
+        </p>
+      <% end %>
+    </div>
+    <div class="links">
+      <% if c.site %>
+        <a href="<%= c.site[0] %>" target="_blank">
+          site
+        </a>
+      <% end %>
+
+      <% if c.video %>
+        <a href="<%= c.video[0] %>" target="_blank">
+          video
+        </a>
+      <% end %>
+
+      <% if c.code %>
+        <a href="<%= c.code[0] %>" target="_blank">
+          code
+        </a>
       <% end %>
     </div>
   </div>

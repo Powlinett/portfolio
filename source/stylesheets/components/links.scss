@@ -1,24 +1,13 @@
-.section.head-section:hover {
-  .media-links {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-  }
-}
-
 .media-links {
   display: flex;
   position: relative;
   z-index: 6;
   height: 60%;
-  visibility: hidden;
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
-  opacity: 0;
   margin: 0;
   margin-right: -8.5rem;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .media-links :nth-child(2), .media-links :nth-child(3) {
@@ -28,7 +17,7 @@
 .media-link {
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
+  transition: $scale-transition;
   width: 12rem;
 }
 
@@ -47,8 +36,8 @@
   }
 
   img {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -61,7 +50,7 @@
 
 .media-link:hover {
   transform: scale(1.2, 1.2);
-  transition: transform 0.3s ease-in-out;
+  transition: $scale-transition;
 
   .content {
     display: flex;

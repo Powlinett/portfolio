@@ -1,27 +1,26 @@
-.parcours .circle {
-  min-width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  border: 0.25rem solid $blue;
-  background-color: $orange;
-  margin-left: -1.5rem;
-  margin-right: 5%;
-  position: relative;
-  top: -0.5rem;
-}
-
 .parcours {
   margin-top: 1.25rem;
   color: $beige;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 4%;
 
   .date {
-    color: $orange;
+    color: $blue;
     margin: 0;
     margin-right: 1rem;
     font-size: 1.3rem;
     font-weight: 800;
-    width: 10rem;
+    height: fit-content;
+    min-width: max-content;
+    text-align: center;
+    background-color: $beige;
+    padding: 0.5rem;
+    box-shadow: $small-shadow;
+
+    &:hover {
+      box-shadow: $medium-shadow;
+    }
   }
 }
 
@@ -36,6 +35,5 @@
 }
 
 .parcours-description {
-  // font-size: 1rem;
   margin: 0.5rem 0;
 }
