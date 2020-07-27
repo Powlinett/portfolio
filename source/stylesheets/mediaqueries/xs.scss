@@ -1,0 +1,66 @@
+@media(max-width: 375px) {
+  .section, .section.head-section {
+    width: 80vw;
+  }
+
+  .section.head-section {
+    height: 40vh;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .headings {
+    height: 78%;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .media-links {
+    bottom: -36%;
+  }
+
+  .category-layout.infos-layout {
+    p:nth-child(4) {
+      flex-direction: column;
+
+      &::after {
+        margin: 0 !important;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media(max-width: 320px) {
+  .headings {
+    height: 75%;
+
+    h2 {
+      font-size: 3.25rem;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+    }
+  }
+
+  .category-layout.infos-layout {
+    padding: 1rem 1.5rem;
+  }
+
+  .techno-card {
+    font-size: 1.25rem;
+  }
+
+  .project {
+    padding: 1.5rem;
+  }
+
+  .category-layout.parcours-layout {
+    padding: 1.5rem;
+  }
+}

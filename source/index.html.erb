@@ -4,7 +4,9 @@
 <div class="section head-section">
   <div class="headings">
     <h2>
-      Pauline Eustachy
+      Pauline
+      <br>
+      Eustachy
     </h2>
     <h1>
       <%= data.me.job.name %>
@@ -20,11 +22,9 @@
 
 <% data.me.categories.each do |category| %>
   <div class="section category-section" id="<%= category.name %>">
-    <div>
-      <h3 class="category-heading">
-        <%= category.name %>
-      </h3>
-    </div>
+    <h3 class="category-heading">
+      <%= category.name %>
+    </h3>
     <div class="category-layout <%= category.name %>-layout">
       <% case category.name %>
         <% when 'infos' %>

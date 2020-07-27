@@ -10,7 +10,7 @@
     [
       {
         "name": "infos",
-        "content": "<p>Fraîchement arrivée dans le développement web fin 2019, j'ai <span id='age'></span> ans et je vis à Lyon.</p><p> Pourquoi le code ? Parce qu’il faut constamment se renouveler, faire travailler ses méninges, être curieux et créatif.</p><p> Avec une préférence pour le back-end, il me tient à coeur de faire du code clair et facilement maintenable.<br><br> J'aime le travail en équipe et l'élaboration de nouvelles solutions.</p>"
+        "content": "<p>Fraîchement arrivée dans le développement web fin 2019, j'ai <span id='age'></span> ans et je vis à Lyon.</p><p> Pourquoi le code ? Parce qu’il faut constamment se renouveler, faire travailler ses méninges, être curieux et créatif.</p><p> Avec une préférence pour le back-end, il me tient à coeur de faire du code clair et facilement maintenable.</p><p> J'aime le travail en équipe et l'élaboration de nouvelles solutions.</p>"
       },
       {
         "name": "technos",

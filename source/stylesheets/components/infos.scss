@@ -10,17 +10,21 @@
   }
 
   p:nth-child(3) {
+    width: 70%;
+  }
+
+  p:nth-child(4) {
     display: flex;
-    align-items: flex-end;
 
     &::after {
       background-image: url('../images/quote-down.svg');
       margin-left: 2rem;
+      margin-top: -12%;
     }
   }
 
 
-  p:first-of-type::before, p:nth-child(3)::after {
+  p:first-of-type::before, p:nth-child(4)::after {
     content: '';
     padding: 3rem;
     background-size: contain;
