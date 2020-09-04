@@ -2,7 +2,7 @@
   "job":
     {
       "name": "développeuse",
-      "speciality": "full-stack",
+      "speciality": "back-end",
       "level": "junior"
     },
 
@@ -21,7 +21,7 @@
             "HTML / CSS",
             "Javascript",
             "Git / Github",
-            "Docker"
+            "SQL / NoSQL"
           ]
       },
       {
@@ -41,6 +41,13 @@
               "code": ["https://github.com/Powlinett/tamaris-dax", "tamaris-gh.png"],
               "description": "Site type e-commerce pour réservation de paires de chaussures en boutique. <br><br> Une interface administrateur est incluse.",
               "technos" : "Réalisé avec Ruby On Rails."
+            },
+            {
+              "name": "Node-chat",
+              "site": ["https://aqueous-springs-36715.herokuapp.com/"],
+              "code": ["https://github.com/Powlinett/node-chat"],
+              "description": "Mini chat créé afin de tester Websocket",
+              "technos": "Réalisé avec Node.js (Express)."
             }
           ]
       },
