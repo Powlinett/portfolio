@@ -6,14 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>
-      Pauline Eustachy - Développeuse full-stack junior
+      Pauline Eustachy - Développeuse back-end junior
     </title>
-    <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
+    <link href="images/favicon.png" rel="icon" type="image/png" />
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <script src="javascripts/site.js"></script>
     <script src="https://kit.fontawesome.com/de5affd924.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="section head-section">
+    <div class="shape left">
+  <div class="text">
+    Découvrez
+    <br>
+    mon travail
+    <br>
+    en détails.
+  </div>
+  <div class="links">
+    <a href="https://github.com/Powlinett" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/pauline-eustachy/" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
+
+<div class="shape right">
+  <div class="text">
+    <div>
+      Une question ?
+    </div>
+    <div>
+      Ou un conseil ?
+    </div>
+    <div>
+      Dites-moi tout !
+    </div>
+  </div>
+  <div class="links">
+    <a href="tel: +33678615188">
+      <img src="../images/phone.svg" alt="">
+    </a>
+    <a href="mailto: pauline.eustachy@gmail.com">
+      <img src="../images/at.svg" alt="">
+    </a>
+  </div>
+</div>
+
+
+<div class="section head-section">
   <div class="headings">
     <h2>
       Pauline
@@ -23,24 +65,64 @@
     <h1>
       développeuse
       <br>
-      full-stack
+      back-end
       <br>
       junior
     </h1>
   </div>
-  <div class="photo">
-  </div>
+  <img src="images/photo.png" class="photo" alt="Pauline Eustachy">
+  <ul class="media-links">
+  <li class="media-link">
+    <a href="https://github.com/Powlinett" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <p class="content" data-after="Cliquer pour copier">
+      /Powlinett
+    </p>
+  </li>
+  <li class="media-link">
+    <a href="https://www.linkedin.com/in/pauline-eustachy/" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <p class="content" data-after="Cliquer pour copier">
+      /pauline-eustachy
+    </p>
+  </li>
+  <li class="media-link">
+    <a href="tel: +33678615188">
+      <img src="../images/phone.svg" alt="">
+    </a>
+    <p class="content" data-after="Cliquer pour copier">
+      06 78 61 51 88
+    </p>
+  </li>
+  <li class="media-link">
+    <a href="mailto: pauline.eustachy@gmail.com">
+      <img src="../images/at.svg" alt="">
+    </a>
+    <p class="content" data-after="Cliquer pour copier">
+      pauline.eustachy@gmail.com
+    </p>
+  </li>
+</ul>
+
 </div>
 
-  <div class="section category-section" id="technos">
-    <div>
-      <h3 class="category-heading">
-        technos
-      </h3>
+  <div class="section category-section" id="infos">
+    <h3 class="category-heading">
+      infos
+    </h3>
+    <div class="category-layout infos-layout">
+          <p>Fraîchement arrivée dans le développement web fin 2019, j'ai <span id='age'></span> ans et je vis à Lyon.</p><p> Pourquoi le code ? Parce qu’il faut constamment se renouveler, faire travailler ses méninges, être curieux et créatif.</p><p> Avec une préférence pour le back-end, il me tient à coeur de faire du code clair et facilement maintenable.</p><p> J'aime le travail en équipe et l'élaboration de nouvelles solutions.</p>
     </div>
+  </div>
+  <div class="section category-section" id="technos">
+    <h3 class="category-heading">
+      technos
+    </h3>
     <div class="category-layout technos-layout">
             <div class="techno-card">
-    Ruby (on Rails)
+    Ruby on Rails
   </div>
   <div class="techno-card">
     Node.js
@@ -49,166 +131,164 @@
     HTML / CSS
   </div>
   <div class="techno-card">
-    Javascript (ES6)
+    Javascript
   </div>
   <div class="techno-card">
     Git / Github
   </div>
   <div class="techno-card">
-    Docker
+    SQL / NoSQL
   </div>
 
     </div>
   </div>
-    <div class="shape shape-left">
-      <div class="inner-shape">
-        <div class="text">
-          Découvrez
-          <br>
-          mon travail
-          <br>
-          en détails.
-        </div>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/pauline-eustachy/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/Powlinett">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </div>
   <div class="section category-section" id="projets">
-    <div>
-      <h3 class="category-heading">
-        projets
-      </h3>
-    </div>
+    <h3 class="category-heading">
+      projets
+    </h3>
     <div class="category-layout projets-layout">
-            <div class="project-tiles">
-    <div class="tile header-tile">
-      <h4>
+            <div class="project">
+    <div class="project-description">
+      <h4 class="project-title">
         Single Tab
       </h4>
+
+        <p>
+          Appli et extension Chrome pour enregistrer ses onglets et les retrouver par mots-clés. <br><br> Créé au le Wagon Lyon, toujours en cours.
+        </p>
+        <p>
+          Réalisé avec Ruby On Rails et Javascript.
+        </p>
     </div>
+    <div class="links">
 
-
-      <div class="tile red-tile" style='background-image: url("images/yt-vignette.png");'>
-        <a href="https://www.youtube.com/watch?v=rHgGdLNrB1I">
-          <img src="/images/yt.png" alt="" />
+        <a href="https://www.youtube.com/watch?v=rHgGdLNrB1I" target="_blank">
+          video
         </a>
-      </div>
 
-      <div class="tile red-tile" style='background-image: url("images/singletab-gh.png");'>
-        <a href="https://github.com/Powlinett/singletab">
-          <img src="/images/gh-logo.png" alt="" />
+        <a href="https://github.com/Powlinett/singletab" target="_blank">
+          code
         </a>
-      </div>
-
-      <div class="tile description-tile">
-        <p>
-          SingleTab est une application et extension Chrome pour gérer ses onglets. <br> Projet créé pendant le Wagon Lyon, toujours en cours.
-        </p>
-        <p>
-          Réalisé en Ruby On Rails et Javascript.
-        </p>
-      </div>
+    </div>
   </div>
-  <div class="project-tiles">
-    <div class="tile header-tile">
-      <h4>
+  <div class="project">
+    <div class="project-description">
+      <h4 class="project-title">
         Tamaris
       </h4>
+
+        <p>
+          Site type e-commerce pour réservation de paires de chaussures en boutique. <br><br> Une interface administrateur est incluse.
+        </p>
+        <p>
+          Réalisé avec Ruby On Rails.
+        </p>
     </div>
-
-      <div class="tile red-tile" style='background-image: url("images/tamaris.png");'>
-        <a href="https://www.tamaris-saintpaullesdax.com">
-          <img src="/images/www.png" alt="" />
+    <div class="links">
+        <a href="https://www.tamaris-saintpaullesdax.com" target="_blank">
+          site
         </a>
-      </div>
 
 
-      <div class="tile red-tile" style='background-image: url("images/tamaris-gh.png");'>
-        <a href="https://github.com/Powlinett/tamaris-dax">
-          <img src="/images/gh-logo.png" alt="" />
+        <a href="https://github.com/Powlinett/tamaris-dax" target="_blank">
+          code
         </a>
-      </div>
+    </div>
+  </div>
+  <div class="project">
+    <div class="project-description">
+      <h4 class="project-title">
+        Node-chat
+      </h4>
 
-      <div class="tile description-tile">
         <p>
-          Site type e-commerce pour réservation de paires de chaussures en boutique. <br> Un back-office basique est inclus.
+          Mini chat créé afin de tester Websocket
         </p>
         <p>
-          Réalisé en Ruby On Rails.
+          Réalisé avec Node.js (Express).
         </p>
-      </div>
+    </div>
+    <div class="links">
+        <a href="https://aqueous-springs-36715.herokuapp.com/" target="_blank">
+          site
+        </a>
+
+
+        <a href="https://github.com/Powlinett/node-chat" target="_blank">
+          code
+        </a>
+    </div>
   </div>
 
     </div>
   </div>
-    <div class="shape shape-right">
-      <div class="inner-shape">
-        <div class="text">
-          <div>
-            Une question ?
-          </div>
-          <div>
-            Un conseil ?
-          </div>
-          <div>
-            Dites-moi tout !
-          </div>
-        </div>
-        <div class="links">
-          <a href="#">
-            <i class="fab fa-slack"></i>
-          </a>
-          <a href="#">
-            <i class="fas fa-at"></i>
-          </a>
-        </div>
-      </div>
-    </div>
   <div class="section category-section" id="parcours">
-    <div>
-      <h3 class="category-heading">
-        parcours
-      </h3>
-    </div>
+    <h3 class="category-heading">
+      parcours
+    </h3>
     <div class="category-layout parcours-layout">
-            <div class="parcours-card">
-    <h5 class="parcours-title">
-      10 ans dans le retail
-    </h5>
-    <p class="parcours-description">
-      This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block.
-    </p>
-  </div>
-  <div class="parcours-card">
-    <h5 class="parcours-title">
-      Manager adjointe
-    </h5>
-    <p class="parcours-description">
-      This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block.
-    </p>
-  </div>
-  <div class="parcours-card">
-    <h5 class="parcours-title">
-      Reconversion au Wagon Lyon
-    </h5>
-    <p class="parcours-description">
-      This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block.
-    </p>
-  </div>
-  <div class="parcours-card">
-    <h5 class="parcours-title">
-      T.A. et intervenante
-    </h5>
-    <p class="parcours-description">
-      This is some text insiThis is some text inside of a div block. azertggccvbi cvhb:jlu lfglio i hfufutytfytct cfgvjhk rytugyijoytugyhji tfyghjyfguhjde of a div block.
-    </p>
-  </div>
+          <div>
+    <div class="parcours">
+      <p class="date">
+        en 2020
+      </p>
+      <div>
+        <div class="parcours-title">
+          <h5>
+            Teacher Assistant et intervenante
+          </h5>
+        </div>
+        <p class="parcours-description">
+          Pédagogie, débug et partage de bonnes pratiques.
+        </p>
+      </div>
+      </div>
+    <div class="parcours">
+      <p class="date">
+        fin 2019
+      </p>
+      <div>
+        <div class="parcours-title">
+          <h5>
+            Reconversion professionnelle au Wagon Lyon
+          </h5>
+        </div>
+        <p class="parcours-description">
+          Créativité, esprit d'analyse et travail d'équipe.
+        </p>
+      </div>
+      </div>
+    <div class="parcours">
+      <p class="date">
+        2017-2019
+      </p>
+      <div>
+        <div class="parcours-title">
+          <h5>
+            Manager adjointe chez LUSH
+          </h5>
+        </div>
+        <p class="parcours-description">
+          Gestion de l’humain, suivi, développement de CA.
+        </p>
+      </div>
+      </div>
+    <div class="parcours">
+      <p class="date">
+        2010-2019
+      </p>
+      <div>
+        <div class="parcours-title">
+          <h5>
+            9 ans d'expérience dans le retail
+          </h5>
+        </div>
+        <p class="parcours-description">
+          Écoute, conseil, persévérance, gestion des priorités.
+        </p>
+      </div>
+      </div>
+</div>
 
     </div>
   </div>
