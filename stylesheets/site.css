@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap");
+.section {
+  max-width: 50vw;
+  margin: 0 auto;
+  margin-top: 16rem;
+  position: relative;
+  z-index: 2; }
+
+.section.head-section {
+  max-width: 77vw;
+  display: flex;
+  align-items: end;
+  height: 60vh;
+  margin-top: 0; }
+
+.category-layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw; }
+
+.category-layout.technos-layout {
+  gap: 1vw;
+  margin-top: 2rem; }
+
+.project-tiles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (11.5vw)[2];
+  grid-template-columns: repeat(2, 11.5vw);
+  -ms-grid-rows: (11.5vw)[2];
+  grid-template-rows: repeat(2, 11.5vw);
+  gap: 1vw; }
+
+.headings {
+  position: absolute;
+  z-index: 1;
+  -ms-grid-row-align: center;
+      align-self: center; }
+
+.photo {
+  width: 50vw;
+  height: 120vh;
+  border-radius: 120% 0 120% 50%;
+  border: 0.5rem dashed #c44536;
+  position: relative;
+  top: -105%;
+  right: -35%;
+  background-image: url("../images/photo.png");
+  background-size: 46%;
+  background-position-y: bottom;
+  background-repeat-y: no-repeat;
+  background-position-x: 30%;
+  -webkit-transition: border-radius 3s ease;
+  transition: border-radius 3s ease; }
+  .photo:hover {
+    border-radius: 200% 0 190% 260%;
+    -webkit-transition: border-radius 3s ease;
+    transition: border-radius 3s ease; }
+  .photo img {
+    height: 21vw;
+    border-radius: 50%;
+    opacity: 65%;
+    -webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.9));
+            filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.9)); }
+
+.tile {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; }
+
+.tile img {
+  max-width: 100%; }
+
+.tile.header-tile {
+  background-color: #edddd4;
+  color: #335c67; }
+
+.tile h4 {
+  width: 100%;
+  margin: 0;
+  align-self: flex-end;
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif; }
+
+.tile.description-tile {
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.3rem; }
+  .tile.description-tile p {
+    margin-top: 0;
+    text-align: justify; }
+
+.red-tile {
+  background-position: center;
+  background-size: cover; }
+  .red-tile img {
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
+  .red-tile:hover img {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+    background: linear-gradient(transparent, transparent); }
+
+.techno-card {
+  background-color: #edddd4;
+  color: #335c67;
+  -webkit-box-shadow: -0.17rem 0.17rem 0 #c44536;
+          box-shadow: -0.17rem 0.17rem 0 #c44536;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transform: skew(0, -5deg);
+          transform: skew(0, -5deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .techno-card:hover {
+    -webkit-box-shadow: -0.3rem 0.3rem 0 #c44536;
+            box-shadow: -0.3rem 0.3rem 0 #c44536;
+    margin-left: 0.13rem; }
+
+.parcours-card {
+  background-color: #edddd4;
+  color: #335c67;
+  padding: 2rem;
+  -webkit-box-shadow: -0.17rem 0.17rem 0 #c44536;
+          box-shadow: -0.17rem 0.17rem 0 #c44536;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .parcours-card:hover {
+    -webkit-box-shadow: -0.3rem 0.3rem 0 #c44536;
+            box-shadow: -0.3rem 0.3rem 0 #c44536;
+    margin-left: 0.13rem; }
+
+.parcours-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  display: inline-block; }
+
+.parcours-description {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.75rem; }
+
+.shape {
+  position: absolute;
+  border: 0.5rem dashed #c44536;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif; }
+
+.shape .links {
+  display: flex;
+  margin-top: 2rem; }
+  .shape .links a {
+    color: #edddd4;
+    font-size: 3rem;
+    text-decoration: none; }
+
+.inner-shape {
+  max-width: 50%; }
+
+.shape-left {
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 40rem;
+  left: -15%;
+  margin-top: 15rem;
+  border-radius: 0% 110% 240% 120%;
+  -webkit-transform: rotate(-41deg);
+          transform: rotate(-41deg);
+  -webkit-transition: border-radius 3s ease;
+  transition: border-radius 3s ease; }
+  .shape-left:hover {
+    border-radius: 200% 180% 200% 200%;
+    -webkit-transition: border-radius 3s ease;
+    transition: border-radius 3s ease; }
+
+.shape-left .inner-shape {
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
+  margin-left: 12rem; }
+  .shape-left .inner-shape .links a {
+    margin-right: 2rem; }
+
+.shape-right {
+  width: 50vw;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  right: -20%;
+  margin-top: 40rem;
+  border-radius: 0% 500% 200% 400%;
+  -webkit-transform: rotate(155deg);
+          transform: rotate(155deg);
+  -webkit-transition: border-radius 3s ease;
+  transition: border-radius 3s ease; }
+  .shape-right:hover {
+    border-radius: 80% 200% 210% 200%;
+    -webkit-transition: border-radius 3s ease;
+    transition: border-radius 3s ease; }
+
+.shape-right .inner-shape {
+  -webkit-transform: rotate(-155deg);
+          transform: rotate(-155deg);
+  margin-left: 12rem;
+  text-align: right; }
+  .shape-right .inner-shape .links {
+    justify-content: flex-end; }
+    .shape-right .inner-shape .links a {
+      margin-left: 2rem; }
+
+body {
+  background-color: #335c67;
+  color: #edddd4;
+  font-family: "Inconsolata", monospace, "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Ubuntu", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  overflow-x: hidden; }
+
+h1, h2, h3 {
+  color: #edddd4;
+  font-family: "Inconsolata", monospace;
+  font-size: 5rem; }
+
+h1 {
+  font-weight: 400;
+  margin: 0; }
+
+h1, h2 {
+  text-shadow: 0 0 0 #c44536, -0.01rem 0.01rem 0 #c44536, -0.02rem 0.02rem 0 #c44536, -0.03rem 0.03rem 0 #c44536, -0.04rem 0.04rem 0 #c44536, -0.05rem 0.05rem 0 #c44536, -0.06rem 0.06rem 0 #c44536, -0.07rem 0.07rem 0 #c44536, -0.08rem 0.08rem 0 #c44536, -0.09rem 0.09rem 0 #c44536, -0.1rem 0.1rem 0 #c44536, -0.11rem 0.11rem 0 #c44536, -0.12rem 0.12rem 0 #c44536, -0.13rem 0.13rem 0 #c44536, -0.14rem 0.14rem 0 #c44536, -0.15rem 0.15rem 0 #c44536, -0.16rem 0.16rem 0 #c44536, -0.17rem 0.17rem 0 #c44536;
+  margin-top: 0; }
+
+h2 {
+  margin-bottom: 2rem; }
+
+h3 {
+  text-shadow: 0 0 0 #c44536, 0.01rem -0.01rem 0 #c44536, 0.02rem -0.02rem 0 #c44536, 0.03rem -0.03rem 0 #c44536, 0.04rem -0.04rem 0 #c44536, 0.05rem -0.05rem 0 #c44536, 0.06rem -0.06rem 0 #c44536, 0.07rem -0.07rem 0 #c44536, 0.08rem -0.08rem 0 #c44536, 0.09rem -0.09rem 0 #c44536, 0.1rem -0.1rem 0 #c44536, 0.11rem -0.11rem 0 #c44536, 0.12rem -0.12rem 0 #c44536, 0.13rem -0.13rem 0 #c44536, 0.14rem -0.14rem 0 #c44536, 0.15rem -0.15rem 0 #c44536, 0.16rem -0.16rem 0 #c44536, 0.17rem -0.17rem 0 #c44536;
+  margin-bottom: 1rem;
+  text-align: right; }
+  h3::before {
+    content: '_';
+    margin-right: -2rem; }
